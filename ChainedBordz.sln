@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainedBordz", "ChainedBordz\ChainedBordz.csproj", "{9C22E6AC-87FC-4427-B496-4B20944EAC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainedBordz.Entities", "ChainedBordz.Entities\ChainedBordz.Entities.csproj", "{27BD6543-B6CA-4CD6-B2C3-9DEBA845B561}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C22E6AC-87FC-4427-B496-4B20944EAC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C22E6AC-87FC-4427-B496-4B20944EAC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C22E6AC-87FC-4427-B496-4B20944EAC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C22E6AC-87FC-4427-B496-4B20944EAC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BD6543-B6CA-4CD6-B2C3-9DEBA845B561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BD6543-B6CA-4CD6-B2C3-9DEBA845B561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BD6543-B6CA-4CD6-B2C3-9DEBA845B561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BD6543-B6CA-4CD6-B2C3-9DEBA845B561}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD0FE082-E5A3-4772-9D88-4AB2A7944BAC}
+	EndGlobalSection
+EndGlobal

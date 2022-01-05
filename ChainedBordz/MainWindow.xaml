@@ -1,0 +1,60 @@
+﻿<Window x:Class="ChainedBordz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChainedBordz"
+        mc:Ignorable="d"
+        Title="Chained Bordz" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" MaxHeight="100px"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*" MaxHeight="60px"></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0" Grid.Column="0">
+            <Label Content="A Chain Of Boards" FontSize="20" FontFamily="Segoe UI Black" VerticalAlignment="Stretch"></Label>
+        </WrapPanel>
+        <DockPanel Grid.Row="0" Grid.Column="1">
+            <Menu DockPanel.Dock="Top" FontSize="16" FontFamily="Segoe UI Semibold">
+                <MenuItem Header="File">
+                    <MenuItem Header="Open"></MenuItem>
+                    <MenuItem Header="Save"></MenuItem>
+                    
+                    <Separator />
+                    <MenuItem Header="New"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Tools">
+                    <MenuItem Header="See Json" Click="SeeJsonMenuItem_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Settings">
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <DockPanel Grid.Row="1" Grid.Column="0">
+            <StackPanel DockPanel.Dock="Top">
+                <Label Content="Key Value Pairs" FontSize="14" FontFamily="Segoe UI Semibold"></Label>
+                <Label Content="Key Name"></Label>
+                <TextBox x:Name="TxtKey" Margin="5,0,5,5"/>
+                <Label Content="Value"></Label>
+                <TextBox x:Name="TxtKeyValue" Margin="5,0,5,5"/>
+            </StackPanel>
+            <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="0,10,8,0">
+                <Button x:Name="ClearKeyValueBtn" Content="Clear" Margin="3,0,3,0"></Button>
+                <Button x:Name="AddKeyValueBtn" Content="Add" Click="AddKeyValueBtn_Click"></Button>
+            </WrapPanel>
+        </DockPanel>
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <WrapPanel x:Name="blockPanel">
+                
+            </WrapPanel>
+        </ScrollViewer>
+        <DockPanel Grid.Row="2" Grid.Column="1">
+            <TextBox x:Name="txtJson" IsReadOnly="True"/>
+        </DockPanel>
+    </Grid>
+</Window>

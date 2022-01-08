@@ -16,7 +16,7 @@
             <RowDefinition Height="3*"></RowDefinition>
             <RowDefinition Height="1*" MaxHeight="60px"></RowDefinition>
         </Grid.RowDefinitions>
-        <WrapPanel Grid.Row="0" Grid.Column="0">
+        <WrapPanel Grid.Row="0" Grid.Column="0" Background="#FFB7FFC5">
             <Label Content="A Chain Of Boards" FontSize="20" FontFamily="Segoe UI Black" VerticalAlignment="Stretch"></Label>
         </WrapPanel>
         <DockPanel Grid.Row="0" Grid.Column="1">
@@ -38,14 +38,14 @@
         <DockPanel Grid.Row="1" Grid.Column="0">
             <StackPanel DockPanel.Dock="Top">
                 <Label Content="Key Value Pairs" FontSize="14" FontFamily="Segoe UI Semibold"></Label>
-                <Label Content="Key Name"></Label>
-                <TextBox x:Name="TxtKey" Margin="5,0,5,5"/>
-                <Label Content="Value"></Label>
-                <TextBox x:Name="TxtKeyValue" Margin="5,0,5,5"/>
+                <Label Content="Key Name" FontSize="14"></Label>
+                <TextBox x:Name="TxtKey" Margin="5,0,5,5" FontSize="14"/>
+                <Label Content="Value" FontSize="14"></Label>
+                <TextBox x:Name="TxtKeyValue" Margin="5,0,5,5" FontSize="14"/>
             </StackPanel>
             <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="0,10,8,0">
-                <Button x:Name="ClearKeyValueBtn" Content="Clear" Margin="3,0,3,0"></Button>
-                <Button x:Name="AddKeyValueBtn" Content="Add" Click="AddKeyValueBtn_Click"></Button>
+                <Button x:Name="ClearKeyValueBtn" Content="Clear" Margin="3,0,3,0" FontSize="16"></Button>
+                <Button x:Name="AddKeyValueBtn" Content="Add" Click="AddKeyValueBtn_Click" FontSize="16"></Button>
             </WrapPanel>
         </DockPanel>
         <ScrollViewer Grid.Row="1" Grid.Column="1">
